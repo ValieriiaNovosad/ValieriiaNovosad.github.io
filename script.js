@@ -20,6 +20,12 @@
     if (langToggle) {
       langToggle.textContent = lang === "ua" ? "EN" : "UA";
     }
+    document.querySelectorAll(".lang-ua").forEach((el) => {
+      el.hidden = lang !== "ua";
+    });
+    document.querySelectorAll(".lang-en").forEach((el) => {
+      el.hidden = lang !== "en";
+    });
   }
 
   window.addEventListener(
