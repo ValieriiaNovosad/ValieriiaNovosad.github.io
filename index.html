@@ -3,32 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Valeria Novosad — Data Analytics</title>
-  <meta name="description" content="Valeria Novosad — Computer Science student building skills in SQL, Python, data quality, and analytics. Open to data internships and junior roles." />
+  <title>Valeria Novosad — Portfolio</title>
+  <meta name="description" content="Valeria Novosad — Computer Science student. Builds web apps, games, and Telegram bots. Experience in medical clinic operations." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,550;0,9..144,600;1,9..144,450&family=Sora:wght@400;500;550;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+
   <header class="nav" id="nav">
-    <a class="nav-logo" href="#top">V<span>N</span></a>
+    <a class="nav-logo" href="#top">Valeria<span>.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li>
-        <a href="#about"><span class="lang-ua">Про мене</span><span class="lang-en">About</span></a>
-      </li>
-      <li>
-        <a href="#skills"><span class="lang-ua">Навички</span><span class="lang-en">Skills</span></a>
-      </li>
-      <li>
-        <a href="#projects"><span class="lang-ua">Проєкти</span><span class="lang-en">Projects</span></a>
-      </li>
-      <li>
-        <a href="#learning"><span class="lang-ua">Навчання</span><span class="lang-en">Learning</span></a>
-      </li>
-      <li>
-        <a href="#contact"><span class="lang-ua">Контакти</span><span class="lang-en">Contact</span></a>
-      </li>
+      <li><a href="#about"><span class="lang-ua">Про мене</span><span class="lang-en">About</span></a></li>
+      <li><a href="#work"><span class="lang-ua">Досвід</span><span class="lang-en">Experience</span></a></li>
+      <li><a href="#projects"><span class="lang-ua">Проєкти</span><span class="lang-en">Projects</span></a></li>
+      <li><a href="#skills"><span class="lang-ua">Навички</span><span class="lang-en">Skills</span></a></li>
+      <li><a href="#contact"><span class="lang-ua">Контакти</span><span class="lang-en">Contact</span></a></li>
     </ul>
     <div class="nav-actions">
       <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
@@ -40,40 +32,30 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-atmosphere" aria-hidden="true"></div>
-      <div class="hero-chart" aria-hidden="true">
-        <svg viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 220 L70 180 L120 195 L170 120 L220 145 L270 80 L320 95 L370 40 L400 55" stroke="#0d8a7c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M20 220 L70 180 L120 195 L170 120 L220 145 L270 80 L320 95 L370 40 L400 55 L400 250 L20 250 Z" fill="url(#chartFill)" opacity="0.35"/>
-          <line x1="20" y1="250" x2="400" y2="250" stroke="#0f1c24" stroke-opacity="0.15"/>
-          <circle cx="170" cy="120" r="4" fill="#0d8a7c"/>
-          <circle cx="270" cy="80" r="4" fill="#0d8a7c"/>
-          <circle cx="370" cy="40" r="4" fill="#06665c"/>
-          <defs>
-            <linearGradient id="chartFill" x1="20" y1="40" x2="20" y2="250" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#0d8a7c" stop-opacity="0.45"/>
-              <stop offset="1" stop-color="#0d8a7c" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-        </svg>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-a"></div>
+        <div class="hero-orb hero-orb-b"></div>
+        <div class="hero-lines"></div>
       </div>
-      <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-kicker">
+          <span class="lang-ua">Київ · CS · Open to work</span>
+          <span class="lang-en">Kyiv · CS · Open to work</span>
+        </p>
         <h1 class="hero-name">
-          <span class="lang-ua">Валерія<br /><em>Новосад</em></span>
-          <span class="lang-en">Valeria<br /><em>Novosad</em></span>
+          <span class="lang-ua">Валерія<br />Новосад</span>
+          <span class="lang-en">Valeria<br />Novosad</span>
         </h1>
-        <p class="hero-headline lang-ua">Будую шлях у Data Analytics — від сирих даних до зрозумілих висновків.</p>
-        <p class="hero-headline lang-en">Building a path in Data Analytics — from raw data to clear decisions.</p>
-        <p class="hero-sub lang-ua">Студентка комп’ютерних наук із досвідом роботи з даними в медичній клініці. Відкрита до стажування та junior-ролей у data.</p>
-        <p class="hero-sub lang-en">Computer Science student with hands-on data work in a medical clinic. Open to data internships and junior roles.</p>
+        <p class="hero-lead lang-ua">Пишу реальні продукти: ігри, Telegram-ботів і веб-застосунки. Паралельно працюю з даними та процесами в медичній клініці.</p>
+        <p class="hero-lead lang-en">I build real products: games, Telegram bots, and web apps. I also work with data and operations in a medical clinic.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#projects">
-            <span class="lang-ua">Переглянути проєкти</span>
-            <span class="lang-en">View projects</span>
+            <span class="lang-ua">Дивитись проєкти</span>
+            <span class="lang-en">See projects</span>
           </a>
           <a class="btn btn-ghost" href="#contact">
-            <span class="lang-ua">Зв’язатися</span>
-            <span class="lang-en">Get in touch</span>
+            <span class="lang-ua">Написати</span>
+            <span class="lang-en">Contact</span>
           </a>
         </div>
       </div>
@@ -81,290 +63,254 @@
 
     <section class="section" id="about">
       <div class="section-inner reveal">
-        <p class="section-label"><span class="lang-ua">Про мене</span><span class="lang-en">About</span></p>
-        <h2 class="section-title lang-ua">Від процесів клініки до аналітики даних</h2>
-        <h2 class="section-title lang-en">From clinic operations to data analytics</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="lang-ua">У клініці Ангелія я працювала з електронною медичною системою, базою пацієнтів, розкладами та підсумковими звітами в Excel. Це щоденна практика точності даних, узгодженості записів і зрозумілої звітності.</p>
-            <p class="lang-en">At Angeliya Clinic I worked with an electronic medical system, patient records, schedules, and Excel summary reports — daily practice in data accuracy, consistent records, and clear reporting.</p>
-            <p class="lang-ua">Паралельно навчаюся на 2-му курсі спеціальності «Комп’ютерні науки» і поглиблюю SQL, Python та основи DBMS. Хочу розвиватися в напрямах Data Quality, Data Integration та Data Visualization.</p>
-            <p class="lang-en">In parallel I study Computer Science (2nd year) and deepen SQL, Python, and DBMS basics. I want to grow in Data Quality, Data Integration, and Data Visualization.</p>
+        <div class="about-layout">
+          <div>
+            <p class="section-label"><span class="lang-ua">Про мене</span><span class="lang-en">About</span></p>
+            <h2 class="section-title lang-ua">Навчаюсь, будую<br />і впроваджую</h2>
+            <h2 class="section-title lang-en">I study, build,<br />and ship</h2>
           </div>
-          <div class="about-meta">
-            <div class="about-meta-item">
-              <h4 class="lang-ua">Медичні дані та процеси</h4>
-              <h4 class="lang-en">Healthcare data &amp; ops</h4>
-              <p class="lang-ua">Клініка Ангелія — адміністрування МІС DocDream, запис пацієнтів, координація виїздів, Excel-звіти.</p>
-              <p class="lang-en">Angeliya Clinic — DocDream HIS admin, patient scheduling, outreach coordination, Excel reports.</p>
-            </div>
-            <div class="about-meta-item">
-              <h4 class="lang-ua">Комп’ютерні науки</h4>
-              <h4 class="lang-en">Computer Science</h4>
-              <p class="lang-ua">ПВНЗ «Український гуманітарний інститут», спец. 122, 2-й курс. Київ, Україна.</p>
-              <p class="lang-en">Ukrainian Humanitarian Institute, specialty 122, 2nd year. Kyiv, Ukraine.</p>
-            </div>
-            <div class="about-meta-item">
-              <h4 class="lang-ua">Фокус зараз</h4>
-              <h4 class="lang-en">Focus now</h4>
-              <p class="lang-ua">SQL, Python, якість даних, візуалізація. English — підвищую до B2.</p>
-              <p class="lang-en">SQL, Python, data quality, visualization. English — leveling up toward B2.</p>
-            </div>
+          <div class="about-copy">
+            <p class="lang-ua">Я студентка 2 курсу «Комп’ютерні науки» (ПВНЗ УГІ). Роблю навчальні й особисті проєкти на Vue, TypeScript, Node.js і React Native — від текстової гри до бота для клініки.</p>
+            <p class="lang-en">I’m a 2nd-year Computer Science student (UGI). I build study and personal projects with Vue, TypeScript, Node.js, and React Native — from a text adventure game to a clinic Telegram bot.</p>
+            <p class="lang-ua">У клініці Ангелія веду електронну МІС, запис пацієнтів, виїзди лікарів і Excel-звіти. Це допомагає розуміти реальні процеси, а не лише код.</p>
+            <p class="lang-en">At Angeliya Clinic I run the electronic medical system, patient scheduling, doctor outreach, and Excel reports. That helps me understand real workflows — not only code.</p>
+            <p class="lang-ua">English — <strong>B1, ближче до B2</strong>. Продовжую практикувати щодня.</p>
+            <p class="lang-en">English — <strong>B1, closer to B2</strong>. I keep practicing every day.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
+    <section class="section section-alt" id="work">
       <div class="section-inner reveal">
-        <p class="section-label"><span class="lang-ua">Навички</span><span class="lang-en">Skills</span></p>
-        <h2 class="section-title lang-ua">Що я розвиваю для роботи з даними</h2>
-        <h2 class="section-title lang-en">What I’m building for data work</h2>
-        <p class="section-lead lang-ua">Пріоритет — SQL, Python, звітність і основи баз даних. AI-інструменти використовую як допоміжні.</p>
-        <p class="section-lead lang-en">Priority: SQL, Python, reporting, and database basics. AI tools are secondary helpers.</p>
-        <div class="skills-grid">
-          <article class="skill-block">
-            <h3>Data &amp; SQL</h3>
-            <ul class="skill-list">
-              <li>SQL (queries, joins, basics)</li>
-              <li>MS Access / relational design</li>
-              <li class="lang-ua">Валідація та узгодженість записів</li>
-              <li class="lang-en">Record validation &amp; consistency</li>
+        <p class="section-label"><span class="lang-ua">Досвід</span><span class="lang-en">Experience</span></p>
+        <h2 class="section-title lang-ua">Робота поруч із кодом</h2>
+        <h2 class="section-title lang-en">Work alongside code</h2>
+
+        <article class="exp">
+          <div class="exp-meta">
+            <h3 class="lang-ua">Клініка Ангелія</h3>
+            <h3 class="lang-en">Angeliya Clinic</h3>
+            <p class="exp-role lang-ua">Адміністратор · МІС · координація</p>
+            <p class="exp-role lang-en">Administrator · HIS · coordination</p>
+          </div>
+          <div class="exp-body">
+            <ul>
+              <li class="lang-ua">Адміністрування DocDream: пацієнти, розклад лікарів, коректність записів</li>
+              <li class="lang-en">DocDream admin: patients, doctor schedules, record accuracy</li>
+              <li class="lang-ua">Організація мобільних медвиїздів і підсумкові звіти в Excel</li>
+              <li class="lang-en">Mobile medical outreach and summary Excel reports</li>
+              <li class="lang-ua">Оформлення конференцій, курсів і робочої документації</li>
+              <li class="lang-en">Conference/course materials and operational documentation</li>
+              <li class="lang-ua">Аудит прайсу клініки vs ДІЛА (нормалізація, метчинг, Excel-звіт)</li>
+              <li class="lang-en">Clinic vs DILA price audit (normalize, match, Excel report)</li>
             </ul>
-          </article>
-          <article class="skill-block">
-            <h3>Python</h3>
-            <ul class="skill-list">
-              <li class="lang-ua">Аналіз CSV, валідатори</li>
-              <li class="lang-en">CSV analysis, validators</li>
-              <li>matplotlib</li>
-              <li class="lang-ua">Базові юніт-тести</li>
-              <li class="lang-en">Basic unit tests</li>
+          </div>
+        </article>
+
+        <article class="exp">
+          <div class="exp-meta">
+            <h3 class="lang-ua">Український гуманітарний інститут</h3>
+            <h3 class="lang-en">Ukrainian Humanitarian Institute</h3>
+            <p class="exp-role lang-ua">Спец. 122 Комп’ютерні науки · 2 курс</p>
+            <p class="exp-role lang-en">Specialty 122 Computer Science · Year 2</p>
+          </div>
+          <div class="exp-body">
+            <ul>
+              <li class="lang-ua">Курсові та екзаменаційні проєкти: Vue, SQL/Access, Python</li>
+              <li class="lang-en">Coursework: Vue apps, SQL/Access, Python</li>
+              <li class="lang-ua">Парний проєкт аналізу CSV (валідатор, matplotlib, тести)</li>
+              <li class="lang-en">Paired CSV analysis project (validator, matplotlib, tests)</li>
             </ul>
-          </article>
-          <article class="skill-block">
-            <h3 class="lang-ua">Звітність</h3>
-            <h3 class="lang-en">Reporting</h3>
-            <ul class="skill-list">
-              <li>Excel (Advanced) / pivot tables</li>
-              <li>Google Sheets</li>
-              <li class="lang-ua">Підсумкові операційні звіти</li>
-              <li class="lang-en">Operational summary reports</li>
-            </ul>
-          </article>
-          <article class="skill-block">
-            <h3 class="lang-ua">Інструменти</h3>
-            <h3 class="lang-en">Tools</h3>
-            <ul class="skill-list">
-              <li>Git / GitHub</li>
-              <li>HTML / CSS</li>
-              <li>DocDream (HIS)</li>
-              <li>macOS</li>
-            </ul>
-          </article>
-          <article class="skill-block">
-            <h3 class="lang-ua">Доменний досвід</h3>
-            <h3 class="lang-en">Domain</h3>
-            <ul class="skill-list">
-              <li class="lang-ua">Медичні процеси та розклади</li>
-              <li class="lang-en">Healthcare workflows &amp; schedules</li>
-              <li class="lang-ua">Документообіг і ТЗ</li>
-              <li class="lang-en">Documentation &amp; specs</li>
-              <li class="lang-ua">Координація виїздів</li>
-              <li class="lang-en">Outreach coordination</li>
-            </ul>
-          </article>
-          <article class="skill-block">
-            <h3 class="lang-ua">Додатково</h3>
-            <h3 class="lang-en">Also</h3>
-            <ul class="skill-list">
-              <li class="lang-ua">AI як робочий асистент</li>
-              <li class="lang-en">AI as a work assistant</li>
-              <li class="lang-ua">Контент і макети (Canva)</li>
-              <li class="lang-en">Content &amp; layouts (Canva)</li>
-              <li class="lang-ua">English — improving toward B2</li>
-              <li class="lang-en">English — improving toward B2</li>
-            </ul>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <div class="section-inner reveal">
-        <p class="section-label"><span class="lang-ua">Проєкти</span><span class="lang-en">Projects</span></p>
-        <h2 class="section-title lang-ua">Кейси з даних і процесів</h2>
-        <h2 class="section-title lang-en">Data and process case studies</h2>
-        <p class="section-lead lang-ua">Спочатку — технічні data-проєкти, далі — робота з даними в клініці.</p>
-        <p class="section-lead lang-en">Technical data projects first, then clinic data work.</p>
+      <div class="section-inner">
+        <div class="projects-head reveal">
+          <div>
+            <p class="section-label"><span class="lang-ua">Проєкти</span><span class="lang-en">Projects</span></p>
+            <h2 class="section-title lang-ua">Те, що я реально зробила</h2>
+            <h2 class="section-title lang-en">Things I actually built</h2>
+          </div>
+          <p class="section-lead lang-ua">Без вигаданих кейсів — лише репозиторії та робочі застосунки.</p>
+          <p class="section-lead lang-en">No made-up cases — only real repos and working apps.</p>
+        </div>
 
-        <div class="project-list">
-          <a class="project-row" href="https://github.com/k-skrypko/CSV-data-analysis" target="_blank" rel="noopener noreferrer">
-            <span class="project-num">01</span>
-            <div class="project-body">
-              <h3 class="lang-ua">Аналіз CSV на Python</h3>
-              <h3 class="lang-en">CSV analysis in Python</h3>
-              <p class="lang-ua">Парний навчальний проєкт: модулі валідатора, збереження, візуалізації (matplotlib) та юніт-тестів. Захист і презентація.</p>
-              <p class="lang-en">Paired academic project: validator, saver, matplotlib visualizer, and unit-test modules. Presented and defended.</p>
+        <div class="project-stack">
+          <a class="project featured reveal" href="https://github.com/ValieriiaNovosad/detective-quest" target="_blank" rel="noopener noreferrer">
+            <div class="project-index">01</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3>Detective Quest</h3>
+                <span class="project-kind lang-ua">Гра</span>
+                <span class="project-kind lang-en">Game</span>
+              </div>
+              <p class="lang-ua">Текстовий детективний квест із розгалуженим сюжетом. Vue 3 + TypeScript + Pinia; прогрес у localStorage. Екзаменаційний проєкт ЗКН.</p>
+              <p class="lang-en">Branching text detective quest. Vue 3 + TypeScript + Pinia; progress in localStorage. CS exam project.</p>
               <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">matplotlib</span>
-                <span class="tag">GitHub</span>
+                <span>Vue 3</span><span>TypeScript</span><span>Pinia</span><span>Vite</span>
               </div>
             </div>
-            <span class="project-arrow" aria-hidden="true">→</span>
+            <span class="project-go" aria-hidden="true">GitHub →</span>
           </a>
 
-          <div class="project-row">
-            <span class="project-num">02</span>
-            <div class="project-body">
-              <h3 class="lang-ua">База даних — навчальний проєкт</h3>
-              <h3 class="lang-en">Database — academic project</h3>
-              <p class="lang-ua">Проєктування БД у MS Access та SQL: таблиці, зв’язки, запити й форми в рамках курсу комп’ютерних наук.</p>
-              <p class="lang-en">Designed a database in MS Access and SQL: tables, relationships, queries, and forms as part of CS coursework.</p>
+          <a class="project featured reveal" href="https://github.com/ValieriiaNovosad/angelia-telegram-bot" target="_blank" rel="noopener noreferrer">
+            <div class="project-index">02</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3 class="lang-ua">Telegram-бот «Ангелія»</h3>
+                <h3 class="lang-en">Angeliya Telegram bot</h3>
+                <span class="project-kind">Bot</span>
+              </div>
+              <p class="lang-ua">Бот для пацієнтів клініки: лікарі, прайс, запис на прийом, нагадування, повідомлення адміну. Node.js + TypeScript + grammY + SQLite.</p>
+              <p class="lang-en">Clinic patient bot: doctors, price list, booking, reminders, admin alerts. Node.js + TypeScript + grammY + SQLite.</p>
               <div class="project-tags">
-                <span class="tag">SQL</span>
-                <span class="tag">MS Access</span>
-                <span class="tag">DBMS</span>
+                <span>Node.js</span><span>TypeScript</span><span>grammY</span><span>SQLite</span>
               </div>
             </div>
-            <span class="project-arrow" aria-hidden="true">→</span>
-          </div>
+            <span class="project-go" aria-hidden="true">GitHub →</span>
+          </a>
 
-          <div class="project-row">
-            <span class="project-num">03</span>
-            <div class="project-body">
-              <h3 class="lang-ua">Excel-звіти мобільних медвиїздів</h3>
-              <h3 class="lang-en">Excel reports for mobile medical outreach</h3>
-              <p class="lang-ua">Повний цикл організації виїздів: локації, дати, фахівці, запис пацієнтів і підсумкові звіти в Excel.</p>
-              <p class="lang-en">Full outreach cycle: venues, dates, specialists, patient registration, and summary Excel reports.</p>
+          <article class="project reveal">
+            <div class="project-index">03</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3 class="lang-ua">Аудит прайсу vs ДІЛА</h3>
+                <h3 class="lang-en">Clinic vs DILA price audit</h3>
+                <span class="project-kind lang-ua">Дані</span>
+                <span class="project-kind lang-en">Data</span>
+              </div>
+              <p class="lang-ua">Реальний робочий пайплайн: нормалізація Excel-прайсів клініки та ДІЛА, метчинг послуг, рекомендовані ціни, фінальний звіт на 11 аркушах.</p>
+              <p class="lang-en">Real work pipeline: normalize clinic and DILA Excel price lists, match services, suggest prices, final 11-sheet report.</p>
               <div class="project-tags">
-                <span class="tag">Excel</span>
-                <span class="tag lang-ua">Звітність</span>
-                <span class="tag lang-en">Reporting</span>
+                <span>Python</span><span>Excel</span><span>CSV</span><span class="lang-ua">Клініка</span><span class="lang-en">Clinic</span>
               </div>
             </div>
-            <span class="project-arrow" aria-hidden="true">→</span>
-          </div>
+          </article>
 
-          <div class="project-row">
-            <span class="project-num">04</span>
-            <div class="project-body">
-              <h3 class="lang-ua">Адміністрування МІС DocDream</h3>
-              <h3 class="lang-en">DocDream HIS administration</h3>
-              <p class="lang-ua">Налаштування та підтримка електронної медичної системи: база пацієнтів, розклад лікарів, коректність даних у системі.</p>
-              <p class="lang-en">Setup and support of the electronic medical system: patient database, doctor schedules, data correctness in the HIS.</p>
+          <article class="project reveal">
+            <div class="project-index">04</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3 class="lang-ua">Холодильник — рецепти</h3>
+                <h3 class="lang-en">Fridge Recipes</h3>
+                <span class="project-kind">Mobile</span>
+              </div>
+              <p class="lang-ua">React Native (Expo) застосунок: продукти вдома → рецепти → калорії та БЖВ. Працює офлайн.</p>
+              <p class="lang-en">React Native (Expo) app: fridge items → recipes → calories and macros. Works offline.</p>
               <div class="project-tags">
-                <span class="tag">DocDream</span>
-                <span class="tag lang-ua">Якість даних</span>
-                <span class="tag lang-en">Data quality</span>
+                <span>React Native</span><span>Expo</span><span>TypeScript</span>
               </div>
             </div>
-            <span class="project-arrow" aria-hidden="true">→</span>
-          </div>
-        </div>
+          </article>
 
-        <div class="project-also">
-          <h4 class="lang-ua">Також</h4>
-          <h4 class="lang-en">Also</h4>
-          <p class="lang-ua">Оформлення медичних конференцій і курсів (програми, реєстрація, документація); AI-контент і макети буклетів для клініки.</p>
-          <p class="lang-en">Medical conferences and courses (programs, registration, documentation); AI-assisted content and booklet layouts for the clinic.</p>
+          <article class="project reveal">
+            <div class="project-index">05</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3>Fit Planner</h3>
+                <span class="project-kind">PWA</span>
+              </div>
+              <p class="lang-ua">Веб-PWA для тренувань і харчування: анкета, план, трекінг, календар, макроси, SQLite бекап.</p>
+              <p class="lang-en">Workout &amp; nutrition PWA: onboarding, plan, tracking, calendar, macros, SQLite backup.</p>
+              <div class="project-tags">
+                <span>Nuxt</span><span>TypeScript</span><span>SQLite</span><span>PWA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-index">06</div>
+            <div class="project-main">
+              <div class="project-top">
+                <h3>Color / ColorMatch Studio</h3>
+                <span class="project-kind lang-ua">Інструмент</span>
+                <span class="project-kind lang-en">Tool</span>
+              </div>
+              <p class="lang-ua">Веб-інструменти для підбору акрилових маркерів до розмальовок за номерами (палітри, OCR зон, каталоги Languo).</p>
+              <p class="lang-en">Web tools for matching acrylic markers to color-by-number pages (palettes, zone OCR, Languo catalogs).</p>
+              <div class="project-tags">
+                <span>Vue / React</span><span>TypeScript</span><span>Canvas</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="learning">
+    <section class="section section-alt" id="skills">
       <div class="section-inner reveal">
-        <p class="section-label"><span class="lang-ua">Навчання</span><span class="lang-en">Learning</span></p>
-        <h2 class="section-title lang-ua">Roadmap у Data Analytics</h2>
-        <h2 class="section-title lang-en">Roadmap into Data Analytics</h2>
-        <p class="section-lead lang-ua">Готуюся до структурованого навчання в напрямі Data Analytics Engineering: якість даних, інтеграція та візуалізація. Нижче — чесний план самопідготовки.</p>
-        <p class="section-lead lang-en">Preparing for structured learning in Data Analytics Engineering: data quality, integration, and visualization. Below is an honest self-study plan.</p>
+        <p class="section-label"><span class="lang-ua">Навички</span><span class="lang-en">Skills</span></p>
+        <h2 class="section-title lang-ua">Чим реально користуюся</h2>
+        <h2 class="section-title lang-en">What I actually use</h2>
 
-        <div class="pillars">
-          <article class="pillar">
-            <h3>Data Quality</h3>
-            <p class="lang-ua">Валідація й трансформація даних на кожному етапі, щоб результати були точними й надійними.</p>
-            <p class="lang-en">Validate and transform data at every stage so outputs stay accurate and trustworthy.</p>
-          </article>
-          <article class="pillar">
-            <h3>Data Integration</h3>
-            <p class="lang-ua">Об’єднання різнорідних джерел у єдину картину через трансформації та міграції.</p>
-            <p class="lang-en">Bring heterogeneous sources into one picture through transformations and migrations.</p>
-          </article>
-          <article class="pillar">
-            <h3>Data Visualization</h3>
-            <p class="lang-ua">Інтерактивні звіти й візуали, які допомагають приймати бізнес-рішення.</p>
-            <p class="lang-en">Interactive reports and visuals that support business decisions.</p>
-          </article>
-        </div>
-
-        <div class="learning-split">
-          <div class="learning-box">
-            <h3 class="lang-ua">Що підтягую</h3>
-            <h3 class="lang-en">What I’m leveling up</h3>
-            <ul class="check-list">
-              <li class="lang-ua">English — зараз нижче B2; ціль Upper-Intermediate (B2) і вище</li>
-              <li class="lang-en">English — currently below B2; target Upper-Intermediate (B2)+</li>
-              <li class="lang-ua">SQL — впевнені запити, joins, агрегації</li>
-              <li class="lang-en">SQL — confident queries, joins, aggregations</li>
-              <li class="lang-ua">Python — pandas, чистка даних, базові скрипти</li>
-              <li class="lang-en">Python — pandas, data cleaning, basic scripts</li>
-              <li class="lang-ua">DBMS — реляційна модель, ключі, нормалізація</li>
-              <li class="lang-en">DBMS — relational model, keys, normalization</li>
+        <div class="skills-board">
+          <div class="skill-col">
+            <h3 class="lang-ua">Розробка</h3>
+            <h3 class="lang-en">Development</h3>
+            <ul>
+              <li>JavaScript / TypeScript</li>
+              <li>Vue 3, Vite, Pinia</li>
+              <li>Node.js, grammY</li>
+              <li>React Native / Expo</li>
+              <li>HTML / CSS</li>
+              <li>Git / GitHub</li>
             </ul>
           </div>
-          <div class="learning-box">
-            <h3 class="lang-ua">План на найближчі тижні</h3>
-            <h3 class="lang-en">Near-term plan</h3>
-            <ul class="roadmap-list">
-              <li data-step="1" class="lang-ua">Тижні 1–2: щоденна English practice + SQL SELECT / WHERE / JOIN</li>
-              <li data-step="1" class="lang-en">Weeks 1–2: daily English practice + SQL SELECT / WHERE / JOIN</li>
-              <li data-step="2" class="lang-ua">Тижні 3–4: GROUP BY, підзапити; Python pandas на відкритих CSV</li>
-              <li data-step="2" class="lang-en">Weeks 3–4: GROUP BY, subqueries; Python pandas on public CSVs</li>
-              <li data-step="3" class="lang-ua">Тижні 5–6: якість даних (nulls, дублікати); прості візуалізації</li>
-              <li data-step="3" class="lang-en">Weeks 5–6: data quality (nulls, duplicates); simple visualizations</li>
-              <li data-step="4" class="lang-ua">Тижні 7–8: міні-проєкт end-to-end: extract → clean → report</li>
-              <li data-step="4" class="lang-en">Weeks 7–8: mini end-to-end project: extract → clean → report</li>
+          <div class="skill-col">
+            <h3 class="lang-ua">Дані та звіти</h3>
+            <h3 class="lang-en">Data &amp; reports</h3>
+            <ul>
+              <li>Excel (Advanced), Google Sheets</li>
+              <li>SQL / MS Access (basic–intermediate)</li>
+              <li>Python (basic): CSV, matplotlib</li>
+              <li>DocDream (HIS)</li>
             </ul>
           </div>
-        </div>
-
-        <div class="resources">
-          <a class="resource-link" href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">SQLBolt</a>
-          <a class="resource-link" href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener noreferrer">Mode SQL Tutorial</a>
-          <a class="resource-link" href="https://pandas.pydata.org/docs/getting_started/" target="_blank" rel="noopener noreferrer">Pandas getting started</a>
-          <a class="resource-link" href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener noreferrer">BBC Learning English</a>
-          <a class="resource-link" href="https://kaggle.com/learn" target="_blank" rel="noopener noreferrer">Kaggle Learn</a>
+          <div class="skill-col">
+            <h3 class="lang-ua">Інше</h3>
+            <h3 class="lang-en">Other</h3>
+            <ul>
+              <li class="lang-ua">English B1 → B2</li>
+              <li class="lang-en">English B1 → B2</li>
+              <li class="lang-ua">Медичні процеси та документообіг</li>
+              <li class="lang-en">Healthcare ops &amp; documentation</li>
+              <li class="lang-ua">AI як допоміжний інструмент</li>
+              <li class="lang-en">AI as a helper tool</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section contact-section" id="contact">
       <div class="section-inner reveal">
         <p class="section-label"><span class="lang-ua">Контакти</span><span class="lang-en">Contact</span></p>
-        <h2 class="section-title lang-ua">Давайте поспілкуємося</h2>
-        <h2 class="section-title lang-en">Let’s talk</h2>
+        <h2 class="section-title lang-ua">Давайте зробимо<br />щось разом</h2>
+        <h2 class="section-title lang-en">Let’s build<br />something together</h2>
+        <p class="section-lead lang-ua">Відкрита до стажування, junior-ролі або цікавого pet-проєкту.</p>
+        <p class="section-lead lang-en">Open to internships, junior roles, or a solid pet project.</p>
+
         <div class="contact-grid">
-          <div>
-            <p class="section-lead lang-ua" style="margin-bottom: 1.5rem;">Шукаю стажування або junior-роль у Data Analytics. Якщо є задача з даними, звітами чи SQL/Python — напишіть.</p>
-            <p class="section-lead lang-en" style="margin-bottom: 1.5rem;">Looking for a data analytics internship or junior role. If you have work involving data, reporting, or SQL/Python — reach out.</p>
-            <div class="contact-links">
-              <a class="contact-link" href="mailto:valerianovosad500@gmail.com">
-                <span class="label">Email</span>
-                <span class="value">valerianovosad500@gmail.com</span>
-              </a>
-              <a class="contact-link" href="https://github.com/ValieriiaNovosad" target="_blank" rel="noopener noreferrer">
-                <span class="label">GitHub</span>
-                <span class="value">github.com/ValieriiaNovosad</span>
-              </a>
-              <a class="contact-link" href="https://t.me/valieriia_novosad" target="_blank" rel="noopener noreferrer">
-                <span class="label">Telegram</span>
-                <span class="value">@valieriia_novosad</span>
-              </a>
-            </div>
+          <div class="contact-links">
+            <a href="mailto:valerianovosad500@gmail.com">
+              <span class="c-label">Email</span>
+              <span class="c-value">valerianovosad500@gmail.com</span>
+            </a>
+            <a href="https://github.com/ValieriiaNovosad" target="_blank" rel="noopener noreferrer">
+              <span class="c-label">GitHub</span>
+              <span class="c-value">ValieriiaNovosad</span>
+            </a>
+            <a href="https://t.me/valieriia_novosad" target="_blank" rel="noopener noreferrer">
+              <span class="c-label">Telegram</span>
+              <span class="c-value">@valieriia_novosad</span>
+            </a>
           </div>
-          <form class="contact-form" id="contactForm" action="mailto:valerianovosad500@gmail.com" method="get" enctype="text/plain">
+
+          <form class="contact-form" id="contactForm">
             <div>
               <label for="name"><span class="lang-ua">Ім’я</span><span class="lang-en">Name</span></label>
               <input id="name" name="name" type="text" required autocomplete="name" />
@@ -375,7 +321,7 @@
             </div>
             <div>
               <label for="message"><span class="lang-ua">Повідомлення</span><span class="lang-en">Message</span></label>
-              <textarea id="message" name="body" required></textarea>
+              <textarea id="message" name="message" required></textarea>
             </div>
             <button class="btn btn-primary" type="submit">
               <span class="lang-ua">Надіслати</span>
@@ -388,8 +334,8 @@
   </main>
 
   <footer class="footer">
-    <span class="lang-ua">© 2026 Valeria Novosad · Data Analytics portfolio</span>
-    <span class="lang-en">© 2026 Valeria Novosad · Data Analytics portfolio</span>
+    <span>© 2026 Valeria Novosad</span>
+    <a href="https://github.com/ValieriiaNovosad" target="_blank" rel="noopener noreferrer">GitHub</a>
   </footer>
 
   <script src="script.js"></script>
