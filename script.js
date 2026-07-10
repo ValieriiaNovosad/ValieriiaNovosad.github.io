@@ -5,6 +5,7 @@
   const navBurger = document.getElementById("navBurger");
   const navLinks = document.getElementById("navLinks");
   const contactForm = document.getElementById("contactForm");
+  const progress = document.getElementById("scrollProgress");
 
   const saved = localStorage.getItem("vn-lang");
   setLang(saved === "en" || saved === "ua" ? saved : "ua");
@@ -25,11 +26,18 @@
     });
   }
 
-  window.addEventListener(
-    "scroll",
-    () => nav?.classList.toggle("scrolled", window.scrollY > 20),
-    { passive: true }
-  );
+  const onScroll = () => {
+    const y = window.scrollY;
+    nav?.classList.toggle("scrolled", y > 16);
+    if (progress) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? (y / max) * 100 : 0;
+      progress.style.width = `${pct}%`;
+    }
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   navBurger?.addEventListener("click", () => navLinks?.classList.toggle("open"));
   navLinks?.querySelectorAll("a").forEach((link) => {
@@ -47,9 +55,12 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -36px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
-    reveals.forEach((el) => io.observe(el));
+    reveals.forEach((el, i) => {
+      el.style.transitionDelay = `${Math.min(i % 4, 3) * 0.06}s`;
+      io.observe(el);
+    });
   } else {
     reveals.forEach((el) => el.classList.add("visible"));
   }
