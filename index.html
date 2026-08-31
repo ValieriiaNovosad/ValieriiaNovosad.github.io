@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Valeria Novosad — Portfolio</title>
-  <meta name="description" content="Valeria Novosad — Computer Science student. Builds web apps, games, and Telegram bots. Experience in medical clinic operations." />
+  <meta name="description" content="Valeria Novosad — 3rd-year Computer Science student. Builds digital products, websites, and bots. Experience in clinic operations and data." />
+  <meta property="og:title" content="Valeria Novosad — Portfolio" />
+  <meta property="og:description" content="3rd-year CS student. Real products: games, Telegram bots, school website. Clinic ops experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valerianovosad.pp.ua/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260831pro" />
+  <link rel="stylesheet" href="styles.css?v=20260831sodb" />
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
@@ -23,7 +27,7 @@
       <li><a href="#contact"><span class="lang-ua">Контакти</span><span class="lang-en">Contact</span></a></li>
     </ul>
     <div class="nav-actions">
-      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">UA</button>
       <button type="button" class="nav-burger" id="navBurger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,27 +37,50 @@
   <main id="top">
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
-      <div class="wrap hero-inner">
-        <p class="hero-kicker">
-          <span class="lang-ua">Київ · CS student · Open to work</span>
-          <span class="lang-en">Kyiv · CS student · Open to work</span>
-        </p>
-        <h1 class="hero-name">
-          <span class="lang-ua">Валерія<br /><em>Новосад</em></span>
-          <span class="lang-en">Valeria<br /><em>Novosad</em></span>
-        </h1>
-        <p class="hero-lead lang-ua">Створюю ігри, Telegram-ботів і веб-сайти. Паралельно працюю з процесами та даними в медичній клініці.</p>
-        <p class="hero-lead lang-en">I build games, Telegram bots, and websites. I also work with processes and data in a medical clinic.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#projects">
-            <span class="lang-ua">Дивитись проєкти</span>
-            <span class="lang-en">View projects</span>
-          </a>
-          <a class="btn btn-ghost" href="#contact">
-            <span class="lang-ua">Зв’язатися</span>
-            <span class="lang-en">Get in touch</span>
-          </a>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="lang-ua">Київ · 3 курс CS · Open to learn</span>
+            <span class="lang-en">Kyiv · 3rd-year CS · Open to learn</span>
+          </p>
+          <h1 class="hero-name">
+            <span class="lang-ua">Валерія<br /><em>Новосад</em></span>
+            <span class="lang-en">Valeria<br /><em>Novosad</em></span>
+          </h1>
+          <p class="hero-lead lang-ua">Будую цифрові продукти й розумію операційні процеси. Шукаю середовище, де можна швидко рости на стику технологій і digital-бізнесу.</p>
+          <p class="hero-lead lang-en">I build digital products and understand real operations. Looking for a place to grow fast at the intersection of technology and digital business.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">
+              <span class="lang-ua">Проєкти</span>
+              <span class="lang-en">Projects</span>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <span class="lang-ua">Контакт</span>
+              <span class="lang-en">Contact</span>
+            </a>
+          </div>
         </div>
+        <aside class="hero-panel" aria-label="Highlights">
+          <div class="panel-item">
+            <span class="panel-label"><span class="lang-ua">Освіта</span><span class="lang-en">Education</span></span>
+            <strong class="lang-ua">Комп’ютерні науки · 3 курс</strong>
+            <strong class="lang-en">Computer Science · Year 3</strong>
+          </div>
+          <div class="panel-item">
+            <span class="panel-label"><span class="lang-ua">Досвід</span><span class="lang-en">Experience</span></span>
+            <strong class="lang-ua">Клініка Ангелія · ops + data</strong>
+            <strong class="lang-en">Angeliya Clinic · ops + data</strong>
+          </div>
+          <div class="panel-item">
+            <span class="panel-label"><span class="lang-ua">Збираю</span><span class="lang-en">Building</span></span>
+            <strong>Web · Bots · Products</strong>
+          </div>
+          <div class="panel-item">
+            <span class="panel-label">English</span>
+            <strong>B1 → B2</strong>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -62,29 +89,16 @@
         <div class="about-grid">
           <div>
             <p class="eyebrow"><span class="lang-ua">Про мене</span><span class="lang-en">About</span></p>
-            <h2 class="section-title lang-ua">Навчаюсь,<br />будую,<br />запускаю</h2>
-            <h2 class="section-title lang-en">Study,<br />build,<br />ship</h2>
+            <h2 class="section-title lang-ua">Технології +<br />реальний<br />контекст</h2>
+            <h2 class="section-title lang-en">Technology +<br />real-world<br />context</h2>
           </div>
           <div class="about-copy">
-            <p class="lang-ua">Студентка 2 курсу «Комп’ютерні науки» (ПВНЗ УГІ). Роблю реальні продукти на Vue, TypeScript, Node.js і React Native — від текстової гри до бота для клініки та сайту школи.</p>
-            <p class="lang-en">2nd-year Computer Science student (UGI). I ship real products with Vue, TypeScript, Node.js, and React Native — from a text adventure to a clinic bot and a school website.</p>
-            <p class="lang-ua">У клініці Ангелія веду МІС DocDream, запис пацієнтів, виїзди лікарів і Excel-звіти. Це дає розуміння живих процесів, не лише коду.</p>
-            <p class="lang-en">At Angeliya Clinic I run DocDream HIS, patient scheduling, doctor outreach, and Excel reports — real workflows, not only code.</p>
-            <dl class="facts">
-              <div>
-                <dt>English</dt>
-                <dd>B1 → B2</dd>
-              </div>
-              <div>
-                <dt><span class="lang-ua">Локація</span><span class="lang-en">Location</span></dt>
-                <dd class="lang-ua">Київ, Україна</dd>
-                <dd class="lang-en">Kyiv, Ukraine</dd>
-              </div>
-              <div>
-                <dt><span class="lang-ua">Фокус</span><span class="lang-en">Focus</span></dt>
-                <dd>Product · Ops</dd>
-              </div>
-            </dl>
+            <p class="lang-ua">Студентка 3 курсу спеціальності «Комп’ютерні науки» (ПВНЗ «Український гуманітарний інститут»). Роблю продукти, якими можна користуватися: сайти, Telegram-боти, веб- і мобільні застосунки.</p>
+            <p class="lang-en">3rd-year Computer Science student at the Ukrainian Humanitarian Institute. I build usable products: websites, Telegram bots, web and mobile apps.</p>
+            <p class="lang-ua">Паралельно працюю в медичній клініці: електронна система, запис пацієнтів, координація процесів, звіти. Це навчило мене бачити бізнес не лише як код, а як процес, людей і результат.</p>
+            <p class="lang-en">In parallel I work at a medical clinic: electronic systems, patient scheduling, process coordination, and reporting. That taught me to see business not only as code, but as process, people, and outcomes.</p>
+            <p class="lang-ua">Хочу розвиватися в digital-напрямі: продукт, аналітика, операції — і системно поєднувати технічні навички з бізнес-мисленням.</p>
+            <p class="lang-en">I want to grow in digital: product, analytics, operations — and systematically connect technical skills with business thinking.</p>
           </div>
         </div>
       </div>
@@ -93,8 +107,8 @@
     <section class="section section-dark" id="work">
       <div class="wrap reveal">
         <p class="eyebrow on-dark"><span class="lang-ua">Досвід</span><span class="lang-en">Experience</span></p>
-        <h2 class="section-title on-dark lang-ua">Робота поруч із кодом</h2>
-        <h2 class="section-title on-dark lang-en">Work beside the code</h2>
+        <h2 class="section-title on-dark lang-ua">Де я вже працювала<br />з відповідальністю</h2>
+        <h2 class="section-title on-dark lang-en">Where I’ve already<br />owned outcomes</h2>
 
         <div class="experience">
           <article class="exp-row">
@@ -102,31 +116,33 @@
               <p class="exp-label">Now</p>
               <h3 class="lang-ua">Клініка Ангелія</h3>
               <h3 class="lang-en">Angeliya Clinic</h3>
-              <p class="exp-role lang-ua">Адміністратор · МІС · координація</p>
-              <p class="exp-role lang-en">Administrator · HIS · coordination</p>
+              <p class="exp-role lang-ua">Адміністратор · МІС · координація процесів</p>
+              <p class="exp-role lang-en">Administrator · HIS · process coordination</p>
             </div>
             <ul class="exp-points">
-              <li class="lang-ua">DocDream: пацієнти, розклад, якість записів</li>
-              <li class="lang-en">DocDream: patients, schedules, record quality</li>
-              <li class="lang-ua">Мобільні медвиїзди та Excel-звіти</li>
-              <li class="lang-en">Mobile outreach and Excel reports</li>
-              <li class="lang-ua">Аудит прайсу клініки vs ДІЛА</li>
-              <li class="lang-en">Clinic vs DILA price audit</li>
+              <li class="lang-ua">Адміністрування DocDream: пацієнти, розклад, якість даних</li>
+              <li class="lang-en">DocDream administration: patients, schedules, data quality</li>
+              <li class="lang-ua">Організація мобільних медвиїздів і підсумкові Excel-звіти</li>
+              <li class="lang-en">Mobile medical outreach and Excel summary reports</li>
+              <li class="lang-ua">Аудит прайсу клініки vs ДІЛА (нормалізація, метчинг, звіт)</li>
+              <li class="lang-en">Clinic vs DILA price audit (normalize, match, report)</li>
+              <li class="lang-ua">Telegram-бот для пацієнтів: запис, прайс, нагадування</li>
+              <li class="lang-en">Patient Telegram bot: booking, prices, reminders</li>
             </ul>
           </article>
           <article class="exp-row">
             <div class="exp-side">
-              <p class="exp-label">CS</p>
+              <p class="exp-label">Education</p>
               <h3 class="lang-ua">Український гуманітарний інститут</h3>
               <h3 class="lang-en">Ukrainian Humanitarian Institute</h3>
-              <p class="exp-role lang-ua">Спец. 122 · 2 курс</p>
-              <p class="exp-role lang-en">Specialty 122 · Year 2</p>
+              <p class="exp-role lang-ua">Спец. 122 Комп’ютерні науки · 3 курс</p>
+              <p class="exp-role lang-en">Specialty 122 Computer Science · Year 3</p>
             </div>
             <ul class="exp-points">
-              <li class="lang-ua">Vue, SQL/Access, Python у курсових</li>
-              <li class="lang-en">Vue, SQL/Access, Python coursework</li>
-              <li class="lang-ua">Парний CSV-аналіз з тестами</li>
-              <li class="lang-en">Paired CSV analysis with tests</li>
+              <li class="lang-ua">Курсові та особисті продукти: Vue, TypeScript, Node.js, SQL</li>
+              <li class="lang-en">Course and personal products: Vue, TypeScript, Node.js, SQL</li>
+              <li class="lang-ua">Парний Python-проєкт: аналіз CSV, валідація, візуалізація</li>
+              <li class="lang-en">Paired Python project: CSV analysis, validation, visualization</li>
             </ul>
           </article>
         </div>
@@ -138,11 +154,11 @@
         <div class="section-head reveal">
           <div>
             <p class="eyebrow"><span class="lang-ua">Проєкти</span><span class="lang-en">Projects</span></p>
-            <h2 class="section-title lang-ua">Зроблене власноруч</h2>
-            <h2 class="section-title lang-en">Built by hand</h2>
+            <h2 class="section-title lang-ua">Реальні речі,<br />які я зробила</h2>
+            <h2 class="section-title lang-en">Real things<br />I’ve shipped</h2>
           </div>
-          <p class="section-note lang-ua">Лише реальні репозиторії та робочі застосунки.</p>
-          <p class="section-note lang-en">Only real repositories and working apps.</p>
+          <p class="section-note lang-ua">Без вигаданих кейсів — тільки продукти й робочі рішення.</p>
+          <p class="section-note lang-en">No invented case studies — only products and working solutions.</p>
         </div>
 
         <div class="project-table">
@@ -154,8 +170,8 @@
                 <span class="proj-kind lang-ua">Гра</span>
                 <span class="proj-kind lang-en">Game</span>
               </div>
-              <p class="lang-ua">Текстовий детективний квест із розгалуженим сюжетом. Vue 3 + TypeScript + Pinia. Екзаменаційний проєкт ЗКН.</p>
-              <p class="lang-en">Branching text detective quest. Vue 3 + TypeScript + Pinia. CS exam project.</p>
+              <p class="lang-ua">Текстовий детективний квест із розгалуженим сюжетом. Vue 3 + TypeScript + Pinia.</p>
+              <p class="lang-en">Branching text detective quest. Vue 3 + TypeScript + Pinia.</p>
               <div class="tags"><span>Vue 3</span><span>TypeScript</span><span>Pinia</span><span>Vite</span></div>
             </div>
             <span class="proj-arrow">GitHub →</span>
@@ -169,8 +185,8 @@
                 <h3 class="lang-en">Angeliya Telegram bot</h3>
                 <span class="proj-kind">Bot</span>
               </div>
-              <p class="lang-ua">Бот для пацієнтів: лікарі, прайс, запис, нагадування, адмін-алерти. Node.js + grammY + SQLite.</p>
-              <p class="lang-en">Patient bot: doctors, prices, booking, reminders, admin alerts. Node.js + grammY + SQLite.</p>
+              <p class="lang-ua">Бот для пацієнтів клініки: лікарі, прайс, запис, нагадування, адмін-алерти.</p>
+              <p class="lang-en">Clinic patient bot: doctors, prices, booking, reminders, admin alerts.</p>
               <div class="tags"><span>Node.js</span><span>TypeScript</span><span>grammY</span><span>SQLite</span></div>
             </div>
             <span class="proj-arrow">GitHub →</span>
@@ -185,8 +201,8 @@
                 <span class="proj-kind lang-ua">Сайт</span>
                 <span class="proj-kind lang-en">Website</span>
               </div>
-              <p class="lang-ua">Статичний сайт для школи в Києві: головна, про школу, напрями, команда, вступ, статті, контакти.</p>
-              <p class="lang-en">Static website for a Kyiv school: home, about, programs, team, enrollment, articles, contacts.</p>
+              <p class="lang-ua">Повний статичний сайт для школи в Києві: головна, напрями, команда, вступ, статті, контакти.</p>
+              <p class="lang-en">Full static website for a Kyiv school: home, programs, team, enrollment, articles, contacts.</p>
               <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             </div>
           </article>
@@ -225,8 +241,8 @@
                 <h3>Color / ColorMatch Studio</h3>
                 <span class="proj-kind">Tool</span>
               </div>
-              <p class="lang-ua">Підбір акрилових маркерів до розмальовок за номерами (палітри, OCR, Languo).</p>
-              <p class="lang-en">Acrylic marker matching for color-by-number pages (palettes, OCR, Languo).</p>
+              <p class="lang-ua">Підбір акрилових маркерів до розмальовок за номерами.</p>
+              <p class="lang-en">Acrylic marker matching for color-by-number pages.</p>
               <div class="tags"><span>Vue / React</span><span>TypeScript</span><span>Canvas</span></div>
             </div>
           </article>
@@ -237,25 +253,25 @@
     <section class="section section-muted" id="skills">
       <div class="wrap reveal">
         <p class="eyebrow"><span class="lang-ua">Навички</span><span class="lang-en">Skills</span></p>
-        <h2 class="section-title lang-ua">Чим користуюся щодня</h2>
-        <h2 class="section-title lang-en">What I use daily</h2>
+        <h2 class="section-title lang-ua">Що вмію застосовувати</h2>
+        <h2 class="section-title lang-en">What I can apply</h2>
 
         <div class="skills-grid">
           <div class="skill">
-            <h3 class="lang-ua">Розробка</h3>
-            <h3 class="lang-en">Development</h3>
-            <p>TypeScript · Vue 3 · Vite · Pinia · Node.js · grammY · React Native · Expo · HTML/CSS · Git</p>
+            <h3 class="lang-ua">Продукт і розробка</h3>
+            <h3 class="lang-en">Product &amp; engineering</h3>
+            <p>TypeScript · Vue 3 · Node.js · React Native · HTML/CSS · Git · product delivery</p>
           </div>
           <div class="skill">
-            <h3 class="lang-ua">Дані</h3>
-            <h3 class="lang-en">Data</h3>
-            <p>Excel Advanced · Google Sheets · SQL / MS Access · Python (CSV, matplotlib) · DocDream</p>
+            <h3 class="lang-ua">Дані та операції</h3>
+            <h3 class="lang-en">Data &amp; operations</h3>
+            <p>Excel Advanced · reporting · SQL basics · process coordination · DocDream</p>
           </div>
           <div class="skill">
-            <h3 class="lang-ua">Контекст</h3>
-            <h3 class="lang-en">Context</h3>
-            <p class="lang-ua">English B1 → B2 · медичні процеси · документообіг · AI як помічник</p>
-            <p class="lang-en">English B1 → B2 · healthcare ops · documentation · AI as a helper</p>
+            <h3 class="lang-ua">Комунікація</h3>
+            <h3 class="lang-en">Communication</h3>
+            <p class="lang-ua">English B1 → B2 · робота з клієнтами/пацієнтами · документація</p>
+            <p class="lang-en">English B1 → B2 · client/patient communication · documentation</p>
           </div>
         </div>
       </div>
@@ -264,10 +280,10 @@
     <section class="section" id="contact">
       <div class="wrap reveal">
         <p class="eyebrow"><span class="lang-ua">Контакти</span><span class="lang-en">Contact</span></p>
-        <h2 class="section-title lang-ua">Напишіть — відповім</h2>
-        <h2 class="section-title lang-en">Write — I’ll reply</h2>
-        <p class="section-note lang-ua">Відкрита до стажування, junior-ролі або сильного pet-проєкту.</p>
-        <p class="section-note lang-en">Open to internships, junior roles, or a strong pet project.</p>
+        <h2 class="section-title lang-ua">Готова до наступного кроку</h2>
+        <h2 class="section-title lang-en">Ready for the next step</h2>
+        <p class="section-note lang-ua">Відкрита до навчання, кейсів і команд, де можна швидко рости.</p>
+        <p class="section-note lang-en">Open to learning, case work, and teams where I can grow quickly.</p>
 
         <div class="contact-grid">
           <div class="contact-links">
@@ -282,6 +298,10 @@
             <a href="https://t.me/valieriia_novosad" target="_blank" rel="noopener noreferrer">
               <span>Telegram</span>
               <strong>@valieriia_novosad</strong>
+            </a>
+            <a href="https://valerianovosad.pp.ua/" target="_blank" rel="noopener noreferrer">
+              <span>Website</span>
+              <strong>valerianovosad.pp.ua</strong>
             </a>
           </div>
 
@@ -315,6 +335,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260831pro"></script>
+  <script src="script.js?v=20260831sodb"></script>
 </body>
 </html>
