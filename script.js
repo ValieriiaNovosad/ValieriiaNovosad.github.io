@@ -8,7 +8,7 @@
   const progress = document.getElementById("scrollProgress");
 
   const saved = localStorage.getItem("vn-lang");
-  setLang(saved === "en" || saved === "ua" ? saved : "ua");
+  setLang(saved === "en" || saved === "ua" ? saved : "en");
 
   langToggle?.addEventListener("click", () => {
     setLang(html.lang === "ua" ? "en" : "ua");
